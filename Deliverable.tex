@@ -10,7 +10,9 @@
 \maketitle
 
 \begin{abstract}
-[Placeholder text]
+While playing computer games, player will focus on different parts of the screen depending on several factor, one of which is experience with the game being played. This project aims to find trends in how experience affects the way players move their gaze across the screen while playing the popular game League of Legends by using eye-tracking to collect data from different groups with different levels of experience. Eye-tracking generates immense amount of data and this data is processed into heat maps and gaze plots. Using these visualizations, the data is analysed and discussed.
+
+A trend was found where experienced players had a greater focus on the battlefield and by knowing what information to filter out was able to faster split their focus to collect more relevant data to make more accurate and deadly decisions.
 \end{abstract}
 
 \begingroup
@@ -28,17 +30,30 @@ This report takes on some questions about where players playing the computer gam
 \section{League of Legends}
 League of Legends (LoL) is a multiplayer online battle arena (moba) game. By default two teams of five players each, participate with the goal of destroying the base of the opposing team. Each player controls a hero with unique abilities on the battlefield trying to achieve this goal.
 
-The map is split into three different `lanes' where most of the combat occurs, separated by a `jungle', a traversable area with less visibility and many twists and turns. Because of this layout, keeping track of the players on one's own team as well as opponents is important to successful tactics. This is primarily accomplished through the use of a mini-map, a small area in the lower right corner showing a top down view of the area with icons for each players, colored by team.
+The map is split into three different \emph{lanes} where most of the combat occurs, separated by a \emph{jungle}, a traversable area with less visibility and many twists and turns. Because of this layout, keeping track of the players on one's own team as well as opponents is important to successful tactics. This is primarily accomplished through the use of a mini-map, a small area in the lower right corner showing a top down view of the area with icons for each players, colored by team.
 
 As the game progresses, each player accumulates gold, the in-game currency, which is meant to be spent in a shop located in each team's base to buy items that improves the player's stats for the duration of the game.
 
-\section{Hypothesis and questions}
-We believe there is a distinct difference between how new players and experienced players look at the screen to attain information. To find out if this is right and to find possible improvements, we have stated the following questions:
+\section{Hypothesis}
+There is a distinct difference between how new players and experienced players look at the screen to attain information.
+
+\section{Questions}
+To explore if this is right or wrong, we have stated the following questions:
 
 \begin{itemize}
-\item Do the new players find the shop?
+\item Do new players find the shop?
 \item Do new players spend less time on the mini-map than experienced players?
+\item How do experience affect the focus on important GUI elements?
 \end{itemize}
+
+\section{Method}
+The experiment was performed by allowing each player to play one round in LoL with most settings preset in order to isolate differences. A standard moba-type map was selected with both team populated with AI (Artificial Intelligence) controlled champions (commonly called \emph{bots}) except for the participant. All champions except for the participant's were preselected to keep the rounds similar for all participants.
+
+During the game the participant was eye-tracked and data describing the movement of the participant's eyes was collected. This data allows the participants’ focus to be analyzed in order to find conclusions. Using the position and duration of each gaze, gaze plots and heat maps could be generated. The heat map was most useful as it showed where the focus was while the gaze plot was useful to find behaviors and find parts of the screen not looked at at all.
+
+A gaze plot displays a screenshot overlayed with a dot for every gaze, connected with lines to show how the gaze has moved. The dots are scaled to visualize the duration of each gaze.
+
+A heat map displays a screenshot overlayed with colors denoting the total amount of time spent looking at each point on the screen. The opacity and color visualizes the relative amount of time.
 
 \chapter{Analysis}
 All of the data retrieved from the experiment are visualized using gaze plots and heat maps, and one of each has been generated for each participant in order to find differences. Participants were selected from two different groups in order to make a comparison. Group 1 (P1, P2 and P3) contains players with little to none experience with the game and group 2 (P4, P5, and P6) contains players with plenty of experience. For the group analysis each group has its group members' gaze plots and heat maps combined into a single gaze plot and a single heat map to help with the analysis.
